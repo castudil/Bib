@@ -1,0 +1,16 @@
+<% i = 0 %>
+<% @bibtexs.each do |bibtex| %>
+
+		
+		<p>
+		author : <%= bibtex.author %>
+	
+		title : <%= bibtex.title %>
+
+		year : <%= bibtex.year %>
+		<p>
+	
+<% end %>
+
+
+<a href=<%= bibtexs_path%>>General Bibtex </a>

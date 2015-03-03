@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school: MyString
+  owner: MyString
+  timestamp: MyString
+  address: MyString
+  type: 
+  file: MyString
+  url: MyString
+  abstract: MyString
+  id_h: 1
+
+two:
+  school: MyString
+  owner: MyString
+  timestamp: MyString
+  address: MyString
+  type: 
+  file: MyString
+  url: MyString
+  abstract: MyString
+  id_h: 1

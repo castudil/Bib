@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kit/kit.iml" filepath="$PROJECT_DIR$/kit/kit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitkat.iml" filepath="$PROJECT_DIR$/kitkat.iml" />
+    </modules>
+  </component>
+</project>
+

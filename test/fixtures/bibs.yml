@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author: MyString
+  title: MyString
+  year: 1
+  tipo: 1
+  path: MyString
+  heir_id: 1
+  heir_type: MyString
+  bibtex_id: 1
+
+two:
+  author: MyString
+  title: MyString
+  year: 1
+  tipo: 1
+  path: MyString
+  heir_id: 1
+  heir_type: MyString
+  bibtex_id: 1

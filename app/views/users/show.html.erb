@@ -1,0 +1,24 @@
+<div class="panel panel-danger">
+    <div class="panel-heading">Contact Information</div>
+      <div class="panel-body">
+        <h2>Name : </h2>
+		<%= @user.fullname %>
+		<p>
+		<h3>Biography</h3>
+		<%= @user.biography %>
+		<p>
+		<h3>Graduation Year</h3>
+		<%= @user.graduation_year %>
+
+		<h3>avatar</h3>
+		<%= image_tag @user.avatar.url(:medium) %>
+
+		<p>
+		<a href=<%=users_path%> >General users</a>
+		<%= link_to 'Edit Account' , edit_user_registration_path %> 
+	</div>
+</div>
+
+
+
+

@@ -1,0 +1,74 @@
+<div class="page-header">
+  <h1>Cesar Astudillo <small>Universidad de Talca</small></h1>
+  
+</div>
+
+
+<nav class="navbar navbar-inner" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-class="{ active: isActive('/')}"><a href=<%=root_path%>><i class="icon-home icon-white"></i>Home</a></li>
+        <% if user_signed_in? %>
+          <li>
+           <%= link_to 'Log out', destroy_user_session_path,:class =>"btn btn-xs ",:method=>'delete'; %></li>
+           <li >
+            <a href=<%= users_path%>> Graduates </a>
+              
+           </li>
+
+           <li >
+            <a href=<%= allbibs_path%>> Papers </a>
+              
+          </li>
+
+          
+          <li >
+            <a href=<%= bibtexs_path%>> Bib Texs </a>
+              
+          </li>
+
+           <li>
+            <a href=<%= user_path(current_user)%> >Your account</a>
+              
+           </li>
+           <li>
+             <a href=<%= new_bibtex_path %>> Make a new bibtex </a>
+           </li>
+
+        <% else %>
+          <li >
+            <a href=<%= users_path%>> Graduates </a>
+              
+          </li>
+
+          <li >
+            <a href=<%= allbibs_path%>> Papers </a>
+              
+          </li>
+
+
+
+
+          <li >
+            <a href=<%= new_user_session_path%>>Log in </a>
+          </li>
+          
+          <li><a href=<%=new_user_registration_path%>>Sign up</a></li>
+
+        <% end %>
+      </ul>
+    </div>
+
+
+  </div><!-- /.container-fluid -->
+</nav>

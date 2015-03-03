@@ -1,0 +1,17 @@
+<h1>Graduates</h1>
+<div class="container-graduate">
+<% @users.each do |user| %>
+	<div class="container-profile">	
+		<% if user.approved.present? %>
+			<ul>
+				<p>
+				<%= user.fullname %> 
+				<p>
+				<%= image_tag user.avatar.url(:medium) %>
+				<p>
+				<a href=<%= user_path(user)%> >Profile</a>
+			</ul>
+		<% end %>
+	</div>
+<% end %>
+</div>

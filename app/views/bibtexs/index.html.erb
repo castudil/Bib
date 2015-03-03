@@ -1,0 +1,16 @@
+<% user = current_user %>
+<% if @bibtexs.size > 0 %>
+	<% @bibtexs.each do |bibtex| %>
+		<ul>
+			<p>
+			<li> <a href=<%=bibtex_path(bibtex)%> > <%= bibtex.filename %></a> </li>
+			<% if user.superUser == 1 %>
+				<%= link_to "Delete", bibtex_path(bibtex), :confirm => "Are you sure?", :method => :delete %>
+			<% end %>
+		</ul>
+	<% end %>
+<% else %>
+	<h1>There is not file bibtexs yet</h1>
+<% end %>
+
+<a href=<%= new_bibtex_path%>>New Bibtex </a>

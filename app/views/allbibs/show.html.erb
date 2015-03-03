@@ -1,0 +1,667 @@
+<% if @bInpro != nil %>
+<p> 
+	<strong> title : </strong>  
+		<% if @bInpro.title.present? == false  %> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.title %>
+		<% end %>
+	<p>
+	<strong> author : </strong> 
+		<% if @bInpro.author.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.author %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bInpro.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.year %>
+		<% end %>
+	<p>
+	<strong> booktitle : </strong> 
+		<% if @bInpro.booktitle.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.booktitle %>
+		<% end %>
+	<p>
+	<strong> editor : </strong> 
+		<% if @bInpro.editor.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.editor %>
+		<% end %>
+	<p>
+	<strong> pages : </strong> 
+		<% if @bInpro.pages.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.pages %>
+		<% end %>
+	<p>
+	<strong> address : </strong> 
+		<% if @bInpro.address.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.address %>
+		<% end %>
+	<p>
+	<strong> publisher : </strong> 
+		<% if @bInpro.publisher.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.publisher %>
+		<% end %>
+	<p>
+	<strong> doi : </strong> 
+		<% if @bInpro.doi.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.doi %>
+		<% end %>
+	<p>
+	<strong> isbn : </strong> 
+		<% if @bInpro.isbn.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.isbn %>
+		<% end %>
+	<p><strong> location : </strong> 
+		<% if @bInpro.location.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.location %>
+		<% end %>
+	<p><strong> abstract : </strong> 
+		<% if @bInpro.abstract.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.abstract %>
+		<% end %>
+	<p>
+	<strong> bibsource : </strong> 
+		<% if @bInpro.bibsource.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.bibsource %>
+		<% end %>
+	<p>
+	<strong> crossref : </strong> 
+		<% if @bInpro.crossref.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.crossref %>
+		<% end %>
+	<p>
+	<strong> ee : </strong> 
+		<% if @bInpro.ee.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.ee %>
+		<% end %>
+	<p>
+	<strong> file : </strong> 
+		<% if @bInpro.file.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.file %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bInpro.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.year %>
+		<% end %>
+	<p>
+	<strong> timestamp : </strong> 
+		<% if @bInpro.timestamp.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.timestamp %>
+		<% end %>
+	<p>
+	<strong> url : </strong> 
+		<% if @bInpro.url.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.url %>
+		<% end %>
+	<p>
+	<strong> review : </strong> 
+		<% if @bInpro.review.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.review %>
+		<% end %>
+	<p>
+	<strong> issn : </strong> 
+		<% if @bInpro.issn.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.issn %>
+		<% end %>
+	<p>
+	<strong> keywords : </strong> 
+		<% if @bInpro.keywords.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInpro.keywords %>
+		<% end %>
+	<p>
+
+
+<p>
+<% elsif @bArticle != nil %>
+
+<p> 
+	<strong> title : </strong>  
+		<% if @bArticle.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.title %>
+		<% end %>
+	<p>
+	<strong> author : </strong> 
+		<% if @bArticle.author.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.author %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bArticle.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.year %>
+		<% end %>
+	<p>
+	<strong> journal : </strong> 
+		<% if @bArticle.journal.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.journal %>
+		<% end %>
+	<p>
+	<strong> volume : </strong> 
+		<% if @bArticle.volume.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.volume %>
+		<% end %>
+	<p>
+	<strong> pages : </strong> 
+		<% if @bArticle.pages.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.pages %>
+		<% end %>
+	<p>
+	<strong> number : </strong> 
+		<% if @bArticle.number.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.number %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bArticle.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.year %>
+		<% end %>
+	<p>
+	<strong> month : </strong> 
+		<% if @bArticle.month.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.month %>
+		<% end %>
+	<p>
+	<strong> abstract : </strong> 
+		<% if @bArticle.abstract.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.abstract %>
+		<% end %>
+	<p>
+	<strong> doi : </strong> 
+		<% if @bArticle.doi.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.doi %>
+		<% end %>
+	<p>
+	<strong> file : </strong> 
+		<% if @bArticle.file.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.file %>
+		<% end %>
+	<p>
+	<strong> issn : </strong> 
+		<% if @bArticle.issn.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.issn %>
+		<% end %>
+	<p>
+	<strong> issue : </strong> 
+		<% if @bArticle.issue.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.issue %>
+		<% end %>
+	<p>
+	<strong> keywords : </strong> 
+		<% if @bArticle.keyword.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.keyword %>
+		<% end %>
+	<p>
+	<strong> publisher : </strong> 
+		<% if @bArticle.publisher.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.publisher %>
+		<% end %>
+	<p>
+	<strong> url : </strong> 
+		<% if @bArticle.url.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.url %>
+		<% end %>
+	<p>
+	<strong> owner : </strong> 
+		<% if @bArticle.owner.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.owner %>
+		<% end %>
+	<p>
+	<p>
+	<strong> timestamp : </strong> 
+		<% if @bArticle.timestamp.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.timestamp %>
+		<% end %>
+	<p>
+	<p>
+	<strong> publisher : </strong> 
+		<% if @bArticle.publisher.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bArticle.publisher %>
+		<% end %>
+	<p>
+<p>
+
+<% elsif @bBook != nil %>
+
+<p> 
+	
+	<strong> title : </strong>  
+		<% if @bBook.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.title %>
+		<% end %>
+	<p>
+	<strong> author : </strong> 
+		<% if @bBook.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.author %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bBook.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.year %>
+		<% end %>
+	<p>
+	<strong> publisher : </strong> 
+		<% if @bBook.publisher.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.publisher %>
+		<% end %>
+	<p>
+	<strong> doi : </strong> 
+		<% if @bBook.doi.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.doi %>
+		<% end %>
+	<p>
+	<strong> pages : </strong> 
+		<% if @bBook.pages.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.pages %>
+		<% end %>
+	<p>
+	<strong> address : </strong> 
+		<% if @bBook.address.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.address %>
+		<% end %>
+	<p>
+	<strong> edition : </strong> 
+		<% if @bBook.edition.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.edition %>
+		<% end %>
+	<p>
+	<strong> isbn : </strong> 
+		<% if @bBook.isbn.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.isbn %>
+		<% end %>
+	<p>
+	<strong> month : </strong> 
+		<% if @bBook.month.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.month %>
+		<% end %>
+	<p>
+	<strong> note : </strong> 
+		<% if @bBook.note.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.note %>
+		<% end %>
+	<p>
+	<strong> owner : </strong> 
+		<% if @bBook.owner.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.owner %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bBook.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.year %>
+		<% end %>
+	<p>
+	<strong> timestamp : </strong> 
+		<% if @bBook.timestamp.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.timestamp %>
+		<% end %>
+	<p>
+	<strong> url : </strong> 
+		<% if @bBook.url.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bBook.url %>
+		<% end %>
+	<p>
+<p>
+
+<% elsif @bPhd != nil %>
+
+<p> 
+	
+	<strong> title : </strong>  
+		<% if @bPhd.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.title %>
+		<% end %>
+	<p>
+	<strong> author : </strong> 
+		<% if @bPhd.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.author %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bPhd.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.year %>
+		<% end %>
+	<p>
+	<strong> school : </strong> 
+		<% if @bPhd.school.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.school %>
+		<% end %>
+	<p>
+	<strong> owner : </strong> 
+		<% if @bPhd.owner.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.owner %>
+		<% end %>
+	<p>
+
+	<strong> timestamp : </strong> 
+		<% if @bPhd.timestamp.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.timestamp %>
+		<% end %>
+	<p>
+	<strong> address : </strong> 
+		<% if @bPhd.address.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.address %>
+		<% end %>
+	<p>
+	<strong> file : </strong> 
+		<% if @bPhd.file.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.file %>
+		<% end %>
+	<p>
+	<strong> url : </strong> 
+		<% if @bPhd.url.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bPhd.url %>
+		<% end %>
+	<p>
+
+<p>
+
+<% elsif @bMth != nil %>
+
+<p> 
+	
+	<strong> title : </strong>  
+		<% if @bMth.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bMth.title %>
+		<% end %>
+	<p>
+	<strong> author : </strong> 
+		<% if @bMth.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bMth.author %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bMth.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bMth.year %>
+		<% end %>
+	<p>
+	<strong> school : </strong> 
+		<% if @bMth.school.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bMth.school %>
+		<% end %>
+	<p>
+	<strong> month : </strong> 
+		<% if @bMth.month.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bMth.month %>
+		<% end %>
+	<p>
+
+	<strong> address : </strong> 
+		<% if @bMth.address.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bMth.address %>
+		<% end %>
+	<p>
+
+<p>
+
+<% elsif @bInco != nil %>
+
+<p> 
+	
+	<strong> title : </strong>  
+		<% if @bInco.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.title %>
+		<% end %>
+	<p>
+	<strong> author : </strong> 
+		<% if @bInco.title.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.author %>
+		<% end %>
+	<p>
+	<strong> year : </strong> 
+		<% if @bInco.year.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.year %>
+		<% end %>
+	<p>
+	<strong> booktitle : </strong> 
+		<% if @bInco.booktitle.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.booktitle %>
+		<% end %>
+	<p>
+	<strong> publisher : </strong> 
+		<% if @bInco.publisher.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.publisher %>
+		<% end %>
+	<p>
+
+	<strong> keywords : </strong> 
+		<% if @bInco.keywords.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.keywords %>
+		<% end %>
+	<p>
+
+	<strong> editor : </strong> 
+		<% if @bInco.editor.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.editor %>
+		<% end %>
+	<p>
+
+	<strong> volume : </strong> 
+		<% if @bInco.volume.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.volume %>
+		<% end %>
+	<p>
+
+	<strong> series : </strong> 
+		<% if @bInco.series.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.series %>
+		<% end %>
+	<p>
+
+	<strong> pages : </strong> 
+		<% if @bInco.pages.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.pages %>
+		<% end %>
+	<p>
+
+	<strong> abstract : </strong> 
+		<% if @bInco.abstract.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.abstract %>
+		<% end %>
+	<p>
+
+	<strong> affiliation : </strong> 
+		<% if @bInco.affiliation.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.affiliation %>
+		<% end %>
+	<p>
+
+	<strong> file : </strong> 
+		<% if @bInco.file.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.file %>
+		<% end %>
+	<p>
+
+	<strong> isbn : </strong> 
+		<% if @bInco.isbn.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.isbn %>
+		<% end %>
+	<p>
+
+	<strong> keywords : </strong> 
+		<% if @bInco.keywords.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.keywords %>
+		<% end %>
+	<p>
+
+	<strong> keywords : </strong> 
+		<% if @bInco.keywords.present? == false%> 
+			No disponible.
+		<% else %>
+			<%= @bInco.keywords %>
+		<% end %>
+	<p>
+	
+<p>
+
+<% end %>

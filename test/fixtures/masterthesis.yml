@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school: MyString
+  address: MyString
+  month: MyString
+  id_h: 1
+
+two:
+  school: MyString
+  address: MyString
+  month: MyString
+  id_h: 1

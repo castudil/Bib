@@ -1,0 +1,36 @@
+
+<% year = 0 %>
+<% if @bibtexs.size > 0 %>
+	<% @bibtexs.each do |bibtex| %>
+
+			<% if year != bibtex.year %>
+				<% year = bibtex.year %>
+				<h2> <%= year %></h2>
+				<p> 
+			<% end %>
+
+			<p>
+				<%= bibtex.author %> 
+				<strong> <a href=<%=allbib_path(bibtex)%> > <%= bibtex.title %></a> </strong> 
+				
+				
+				<%= link_to "Bibtex",  bibtex.path %>
+				<a href=<%=xm_path(bibtex)%> > Xml </a> 
+				<a href=<%=json_path(bibtex)%> > Json </a> 
+				<% user = current_user %>
+				<% if user != nil && user.superUser == 1 %>
+					<%= link_to "Delete", allbib_path(bibtex), :confirm => "Are you sure?", :method => :delete %>
+				
+					<% if bibtex.pdf.present? %>
+						<%= link_to "Download" ,Pdf.last.pdfFile.url(:original , false) %>
+					<% else %>
+						<a href=<%=new_pdf_path(:id => bibtex.id) %> > Add pdf </a>
+					<% end %>
+				<% end %>
+			<p>
+		
+	<% end %>
+<% else %>
+	<h2>There is not papers yet </h2>
+<% end %>
+<%= will_paginate @bibtexs%>
