@@ -542,11 +542,11 @@ section h3.section-subheading {
 
 .timeline .timeline-heading h4 {
     margin-top: 0;
-    color: inherit;
+    color: #fff;
 }
 
 .timeline .timeline-heading h4.subheading {
-    text-transform: none;
+    color: #ecf0f1;
 }
 
 .timeline .timeline-body>p,
