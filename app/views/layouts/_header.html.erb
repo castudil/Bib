@@ -34,7 +34,7 @@
 </head>
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
+    <!-- Navigation href="#portfolio"-->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -54,23 +54,39 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Graduates</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+             
 
                     <% if user_signed_in? %>
                       <li>
                         <%= link_to 'Log out', destroy_user_session_path,:class =>"page-scroll",:method=>'delete'; %></li>
                       </li >
+
+                       <li >
+                        <a href=<%= users_path%> > Students </a>
+                          
+                       </li>
+
+                       <li >
+                        <a href=<%= allbibs_path%>> Papers </a>
+                          
+                      </li>
+
+                      
+                      <li >
+                        <a href=<%= bibtexs_path%>> Bib Texs </a>
+                          
+                      </li>
+
+                       <li>
+                        <a href=<%= user_path(current_user)%> >Your account</a>
+                          
+                       </li>
+                       <li>
+                         <a href=<%= new_bibtex_path %>> Make a new bibtex </a>
+                       </li>
+
+
+
                     <% else %>
                         <li >
                             <a href=<%= new_user_session_path%>>Log in </a>
