@@ -1,0 +1,27 @@
+allbib 
+
+	controller to manage bib class 
+
+bibtexs
+
+	controller to manage File bibtex 
+
+rails g model author:string title:string year:integer tipo:integer path:string
+
+rails g model inproceeding author:string title:string booktitle:string year:integer editor:string pages:string address:string publisher:string doi:string isbn:string location:string abstract:string bibsource:string crossref:string ee:string file:string owner:string timestamp:string url:string review:string issn:string keywords:string 
+
+rails g model bib author:string title:string year:integer tipo:integer
+
+rails g model article journal:string volume:string pages:string number:string month:string abstract:string doi:string file:string issn:string issue:string keyword:string publisher:string url:string owner:string timestamp:string publisher:string
+
+rails g model book publisher:string author:string doi:string pages:string address:string edition:string isbn:string month:string note:string owner:string timestamp:string url:string
+
+  
+rails g model phdthesi school:string owner:string timestamp:string address:string type:string file:string url:string 
+
+rails g model masterthesi author:string school:string address:string month:string 
+
+rails g model incollection booktitle:string publisher:string keywords:string editor:string volume:string series:string pages:string abstract:string affiliation:string doi:string file:string isbn:string
+
+
+si de hecho puedo filtrar por ejemplo todos los == 1999 de esta forma @bibtex['@*[year=1999]'].length pero al tratar de hacer esto con un for la gema no abmite variables por ejemplo @bib['@*[year=#{i}]'].length donde " i " fuera aumentando.  Por esto no lo pude hacer de esa forma y me vi obligado a hacerlo con base de datos. bueno el miercoles hablamos mejor y si para esta semana por ultimo lo mando por  
