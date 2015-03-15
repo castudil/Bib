@@ -89,7 +89,19 @@
 
                     <% else %>
                         <li >
-                            <a href=<%= new_user_session_path%>>Log in </a>
+                            <a href=<%= users_path%>> Students </a>
+                        </li>
+
+                        <li >
+                          <a href=<%= allbibs_path%>> Papers </a>
+                        </li>
+
+                        <li >
+                          <a href=<%= new_user_session_path%>>Log in </a>
+                        </li>
+                          
+                        <li>
+                          <a href=<%=new_user_registration_path%>>Sign up</a>
                         </li>
 
                     <% end %>
