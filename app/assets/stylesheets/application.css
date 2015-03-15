@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .container-sing-in {
+
+  float: left;
+  width :32%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
