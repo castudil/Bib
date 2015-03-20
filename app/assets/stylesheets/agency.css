@@ -300,6 +300,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    background-image: url("piedra.JPG");
 }
 
 header .intro-text .intro-lead-in {
