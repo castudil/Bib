@@ -75,7 +75,8 @@ h6 {
 }
 
 .bg-light-blue {
-    background-color: #2980b9;
+    background-image: url("piedra.JPG");
+ 
 }
 
 
@@ -300,7 +301,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    background-image: url("piedra.JPG");
+    
 }
 
 header .intro-text .intro-lead-in {
