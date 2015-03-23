@@ -76,6 +76,11 @@ h6 {
 
 .bg-light-blue {
     background-image: url("piedra.JPG");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
  
 }
 
