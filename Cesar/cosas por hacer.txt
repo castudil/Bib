@@ -1,0 +1,86 @@
+_contact = formulario de contacto
+	name
+	email
+	message
+	catcha
+
+mandrill key : 
+
+	FfoVaB3exElpHXH9akHCpw
+
+
+1.- foto de fondo
+
+2.- caja de contacto
+
+3.- iconos y links
+
+4.- Bibtex funcionando (yo te tengo que enviar bibtex)
+
+5.- nombre y titulo al reves (nombre mas grande titulo pequeno)
+
+6.- OJO punto aparte
+
+     My research involves algorithms capable of learning from data and
+their applications in real-world domains. One of my main research
+lines focuses on enhancements to the Self-Organizing Maps (SOM).
+
+ I explore avenues to improve the SOM capabilities by defining
+SOM-based strategies that learn the data distribution and its
+underlying structure in a more accurate manner. I am particularly
+interested in a subset of such variants which use a tree as their
+underlying data structure.
+
+7.- BIO:
+
+Assistant Professor
+Assistant Professor, Universidad de Talca,  (Currently).
+
+Ph.D.
+Ph.D. in Computer Science, Carleton University. 2011.
+
+Engineer
+Computer Engineering. Universidad de Concepción. 2002.
+
+B.Sc.
+B.Sc. Engineering Sciences, Universidad de Concepción. 2002.
+
+8.- Revisar grants.
+
+9.-
+Nombre: Hernan Nuñez,
+Programa: MSc
+Afiliación: Magister Gestión de Operaciones()
+
+
+Franzel Madariaga
+Programa: Computer Engineering
+Afiliación: Ingeniería Civil en Computación
+
+Jimmy Gutierrez
+MGO
+
+
+Mario Sanhueza
+ICC
+
+Eduardo Zapata
+MGO
+
+
+Marianela Iturriaga
+ICC
+
+Jorge Poblete
+MGO
+
+
+10.-crear seccion resources
+
+Resources
+
+Free Machine Learning eBooks
+https://github.com/rasbt/pattern_classification/blob/master/resources/machine_learning_ebooks.md
+
+16 Free eBooks On Machine Learning!
+http://www.efytimes.com/e1/121516/Free-eBooks-On-Machine-Learning
