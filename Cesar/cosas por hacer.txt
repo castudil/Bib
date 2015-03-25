@@ -11,15 +11,15 @@ mandrill key :
 
 1.- foto de fondo
 
-2.- caja de contacto
+2.- caja de contacto 
 
-3.- iconos y links
+3.- iconos y links READY 
 
 4.- Bibtex funcionando (yo te tengo que enviar bibtex)
 
-5.- nombre y titulo al reves (nombre mas grande titulo pequeno)
+5.- nombre y titulo al reves (nombre mas grande titulo pequeno) READY 
 
-6.- OJO punto aparte
+6.- OJO punto aparte READY 
 
      My research involves algorithms capable of learning from data and
 their applications in real-world domains. One of my main research
@@ -31,7 +31,7 @@ underlying structure in a more accurate manner. I am particularly
 interested in a subset of such variants which use a tree as their
 underlying data structure.
 
-7.- BIO:
+7.- BIO: READY 
 
 Assistant Professor
 Assistant Professor, Universidad de Talca,  (Currently).
@@ -47,7 +47,7 @@ B.Sc. Engineering Sciences, Universidad de Concepción. 2002.
 
 8.- Revisar grants.
 
-9.-
+9.- READY 
 Nombre: Hernan Nuñez,
 Programa: MSc
 Afiliación: Magister Gestión de Operaciones()
@@ -75,7 +75,7 @@ Jorge Poblete
 MGO
 
 
-10.-crear seccion resources
+10.-crear seccion resources READY 
 
 Resources
 
