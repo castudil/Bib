@@ -4,7 +4,7 @@
   <h1>Papers <small>on years</small></h1>
 </div>
 
-
+<center>
 <% year = 0 %>
 <% if @bibtexs.size > 0 %>
 	<% @bibtexs.each do |bibtex| %>
@@ -39,4 +39,5 @@
 <% else %>
 	<h2>There is not papers yet </h2>
 <% end %>
+</center>
 <%= will_paginate @bibtexs%>
