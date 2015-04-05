@@ -1,5 +1,5 @@
 class AllbibsController < ApplicationController
-
+	layout "allbibs_layaout"
 	def show
 		 
 		bib = Bib.find(params[:id])
