@@ -21,8 +21,8 @@
 				
 				
 				<%= link_to "Bibtex",  bibtex.path %>
-				<a href=<%=xm_path(bibtex)%> > Xml </a> 
-				<a href=<%=json_path(bibtex)%> > Json </a> 
+				<strong><a href=<%=xm_path(bibtex)%>  style="color: rgb(241, 196, 15)"> Xml </a></strong> 
+				<strong><a href=<%=json_path(bibtex)%> style="color: rgb(241, 196, 15)" > Json </a></strong> 
 				<% user = current_user %>
 				<% if user != nil && user.superUser == 1 %>
 					<%= link_to "Delete", allbib_path(bibtex), :confirm => "Are you sure?", :method => :delete %>
