@@ -11,12 +11,12 @@
 
 			<% if year != bibtex.year %>
 				<% year = bibtex.year %>
-				<h2> <%= year %></h2>
+				<strong><h2> <%= year %></h2></strong>
 				<p> 
 			<% end %>
 
 			<p>
-				<%= bibtex.author %> 
+				<strong> <%= bibtex.author %> </strong> 
 				<strong> <a href=<%=allbib_path(bibtex)%> > <%= bibtex.title %></a> </strong> 
 				
 				
