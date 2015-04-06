@@ -1,3 +1,4 @@
+<div class="container-default" >
 <% user = current_user %>
 <% if @bibtexs.size > 0 %>
 	<% @bibtexs.each do |bibtex| %>
@@ -14,3 +15,4 @@
 <% end %>
 
 <a href=<%= new_bibtex_path%>>New Bibtex </a>
+</div>
