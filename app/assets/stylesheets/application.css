@@ -40,3 +40,20 @@
   color: #222;
   font: 80px 'LeagueGothicRegular';
 }
+
+.container-graduate {
+
+
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.container-profile {
+  float: left;
+  margin-top: 5%;
+  margin-left: 5%;
+
+
+}
