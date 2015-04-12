@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   validates :password, presence: true, :on => :create
 
-  has_attached_file :avatar, :styles => { :medium => "180x260>" },:default_url => "/images/:style/missing.png"  ,  :content_type => ["image/jpg", "image/gif", "image/png", "image/jpeg"]
+  has_attached_file :avatar, :styles => { :medium => "180x260>" },:default_url => "user-default.png"  ,  :content_type => ["image/jpg", "image/gif", "image/png", "image/jpeg"]
   validates_attachment_file_name :avatar, :matches => [/png\Z/, /jpe?g\Z/, /gif\Z/, /jpg\Z/]
 
   def active_for_authentication? 
