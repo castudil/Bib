@@ -1,4 +1,14 @@
+<----!  bib.tipo 
+	0 = Inproceeding #red  
+	1 = Article #verde 
+	2 = Book    #amarillo
+	3 = Phdthesi #negro
+	4 = Masterthesi #celeste
+	5 = Incollection #naranjo
+	
 
+
+---->
 
 <div class="page-header">
   <h1>Papers <small>on years</small></h1>
@@ -15,7 +25,23 @@
 				<strong><h2> <%= year %></h2></strong>
 				<p> 
 			<% end %>
-			<div class="color-box" style="background-color:#ae163e;"></div>
+
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<% if bibtex.tipo == 0 %>
+				<div class="color-box" style="background-color:#ae163e;"></div>
+			<% elsif bibtex.tipo == 1 %>
+				<div class="color-box" style="background-color:#27ae60;"></div>
+			<% elsif bibtex.tipo == 2 %>
+				<div class="color-box" style="background-color:#f1c40f;"></div>
+			<% elsif bibtex.tipo == 3 %>
+				<div class="color-box" style="background-color:#2c3e50;"></div>
+			<% elsif bibtex.tipo == 4 %>
+				<div class="color-box" style="background-color:#3498db;"></div>
+			<% elsif bibtex.tipo == 5 %>
+				<div class="color-box" style="background-color:#d35400;"></div>
+			<% end %>
+			
 			<p>
 				<strong> <%= bibtex.author %> </strong> 
 				<strong> <a href=<%=allbib_path(bibtex)%> > <%= bibtex.title %></a> </strong> 
