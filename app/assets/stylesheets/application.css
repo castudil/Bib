@@ -52,6 +52,14 @@ border-bottom:1px solid #313030;
   margin-top: 10%;
 }
 
+ .container-allbibs-index{
+
+  float: left;
+  
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
  .container-show-bib{
 
   float: left;

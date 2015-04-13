@@ -5,29 +5,29 @@
 	3 = Phdthesi #negro
 	4 = Masterthesi #celeste
 	5 = Incollection #naranjo
-	
-
-
 ---->
 
-<div class="page-header">
-  <h1>Papers <small>on years</small></h1>
-</div>
+
 
 
 <% year = 0 %>
+<% firstLine = 0 %>
+<div class="container-allbibs-index">
 <% if @bibtexs.size > 0 %>
 	<% @bibtexs.each do |bibtex| %>
 
 			<% if year != bibtex.year %>
-				<div class="line-separator"></div>
+				<% if firstLine != 0 %>
+					<div class="line-separator"></div>
+				<% end %>
+				<% firstLine = firstLine +1   %>
 				<% year = bibtex.year %>
 				<strong><h2> <%= year %></h2></strong>
 				<p> 
 			<% end %>
 
 			<p>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<% if bibtex.tipo == 0 %>
 				<div class="color-box" style="background-color:#ae163e;"></div>
 			<% elsif bibtex.tipo == 1 %>
@@ -67,5 +67,5 @@
 <% else %>
 	<h2>There is not papers yet </h2>
 <% end %>
-
+</div>
 <%= will_paginate @bibtexs%>
