@@ -34,8 +34,10 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :last_name
       t.string :biography
       t.string :graduation_year
+      t.string :career
       t.attachment :avatar
       t.integer :superUser
+
 
       t.timestamps
     end

@@ -205,6 +205,7 @@ ActiveRecord::Schema.define(version: 20141227182231) do
     t.string   "last_name"
     t.string   "biography"
     t.string   "graduation_year"
+    t.string   "career"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
