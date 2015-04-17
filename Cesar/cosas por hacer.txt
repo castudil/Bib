@@ -1,5 +1,6 @@
 foto de libros home 
-- link research gate
+
+
 - hacer que envie email
 - agregar cashap
 - campo para guardar informacion en html wiki code - wiki markup

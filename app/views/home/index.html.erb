@@ -317,29 +317,30 @@
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
+       
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <%= link_to image_tag("gh.png", class: "img-responsive img-circle" ,alt: "tumblr", height: "100px", width: "130px" ), "https://www.linkedin.com/pub/cesar-astudillo/43/371/931"%>
-                        <h4>Mario Sanhueza</h4>
-                        <p class="text-muted">ICC</p>
+                        <%= image_tag @users.first.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
+                        <h4><%= @users.first.name %> <%= @users.first.last_name %> </h4>
+                        <p class="text-muted"><%=@users.first.career%></p>
                         
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                         <%= link_to image_tag("gh.png", class: "img-responsive img-circle" ,alt: "tumblr", height: "100px", width: "130px" ), "https://www.linkedin.com/pub/cesar-astudillo/43/371/931"%>
-                        <h4>Jimmy Gutierrez</h4>
-                        <p class="text-muted">ICI</p>
+                          <%= image_tag @users.second.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
+                        <h4><%= @users.second.name %> <%= @users.first.last_name %> </h4>
+                        <p class="text-muted"><%=@users.second.career%></p>
                      
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                        
-                        <%= link_to image_tag("gh.png", class: "img-responsive img-circle" ,alt: "tumblr", height: "100px", width: "130px" ), "https://www.linkedin.com/pub/cesar-astudillo/43/371/931"%>
-                        <h4>Eduardo Zapata</h4>
-                        <p class="text-muted">MGO</p>
+                          <%= image_tag @users.third.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
+                        <h4><%= @users.third.name %> <%= @users.first.last_name %> </h4>
+                        <p class="text-muted"><%=@users.third.career%></p>
                         
                     </div>
                 </div>

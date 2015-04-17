@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 	layout "main_home"
 	def index
-		#@users = User.find(:all, :order => "id desc", :limit => 3)
+		@users = User.last(3) # last 3 records in ascending order
 	end
 	
 end
