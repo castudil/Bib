@@ -6,4 +6,3 @@ foto de libros home
 - campo para guardar informacion en html wiki code - wiki markup
 - File : logo pdf 
 - resolver problemas foto 
-- home students dinamico
