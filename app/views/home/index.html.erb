@@ -414,6 +414,13 @@
                 </div>
             </form>
         </div>
+
+        <%= form_tag contact_path do %>
+          <div><%= label_tag "message" %><br />
+          <%= text_field_tag 'message[message]', nil, :class => "input-field" %></div>
+        <p></p>
+        <div><%=  submit_tag 'Send' %></div>
+        <% end %>
     </section>
 
   
