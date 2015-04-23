@@ -1,8 +1,42 @@
-foto de libros home 
+1) ahora foto fija :)
 
+ve si puedes obtenrer codigo de aqui
+http://www.datasciencehandbook.me/
 
-- hacer que envie email
-- agregar cashap
-- campo para guardar informacion en html wiki code - wiki markup
-- File : logo pdf 
-- resolver problemas foto 
+2)textos alineados a la izquierda (no centrado, con formato de parrafo)
+
+3) My research (borrar)
+
+4) Students -> copiar
+http://www.datasciencehandbook.me/
+
+5) Students ->
+
+Lorem ipsum dolor sit amet consectetur. -> Students currently working
+in the research group
+
+More Graduates -> Previous Students
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+laboriosam veritatis, quos non quis ad perspiciatis, totam corporis
+ea, alias ut unde. -> chao pescao
+
+6) Sites to visit -> chao
+
+7) contact me -> chao
+
+8) CAPTCHA!!!!! -> google: captcha gem ruby
+
+9) Links ->  CONNECT US
+
+10)  Research -> What do I do?
+
+11) reparar link mendeley
+
+12 ) crear caja de descripcion  para los estudiantes, idealmente que
+acepte codigo Wikji code
+
+13 )http://maps.google.com/maps?q=-35.00162,-71.22977
+con gotita roja de google maps
+
+14) Resources -> Additional Material
