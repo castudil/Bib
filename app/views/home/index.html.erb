@@ -336,6 +336,8 @@
                  
                     <div class="team-member">
                         <%= image_tag @users.first.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
+                        
+                        <%= @users.first.biography %>
                         <h4><%= @users.first.name %> <%= @users.first.last_name %> </h4>
                         <p class="text-muted"><%=@users.first.career%></p>
                         
