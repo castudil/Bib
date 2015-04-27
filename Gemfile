@@ -40,6 +40,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem "recaptcha", :require => "recaptcha/rails"
+
 gem 'pg'
 
 gem 'devise'
