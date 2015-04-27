@@ -8,8 +8,14 @@ class HomeController < ApplicationController
     end
 
     def contact
+
+    	if verify_recaptcha( :message => "Oh! It's error with reCAPTCHA!") 
+   			InvitationMailer.contact_email(params[:message][:message], params[:email][:email]).deliver
+  		else
+    		
+  		end
     
-        InvitationMailer.contact_email(params[:message][:message], params[:email][:email]).deliver
+        
 
         redirect_to root_path
         

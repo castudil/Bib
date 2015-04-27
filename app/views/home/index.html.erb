@@ -407,6 +407,7 @@
           <div><%= label_tag "message" %><br />
           <%= text_field_tag 'message[message]', nil, :class => "input-field" %></div>
         <p></p>
+            <%= recaptcha_tags(:display => {:theme => 'red'}) %>
         <div><%=  submit_tag 'Send' %></div>
         <% end %>
         </center>
