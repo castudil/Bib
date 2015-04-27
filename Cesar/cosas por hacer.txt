@@ -1,23 +1,7 @@
-1) ahora foto fija :)
-
-ve si puedes obtenrer codigo de aqui
-http://www.datasciencehandbook.me/
-
 4) Students -> copiar
 http://www.datasciencehandbook.me/
 
-
-
-More Graduates -> Previous Students
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-laboriosam veritatis, quos non quis ad perspiciatis, totam corporis
-ea, alias ut unde. -> chao pescao
-
-
 8) CAPTCHA!!!!! -> google: captcha gem ruby
-
-11) reparar link mendeley
 
 12 ) crear caja de descripcion  para los estudiantes, idealmente que
 acepte codigo Wikji code
@@ -25,3 +9,5 @@ acepte codigo Wikji code
 13 )http://maps.google.com/maps?q=-35.00162,-71.22977
 con gotita roja de google maps
 
+
+dwqdw
