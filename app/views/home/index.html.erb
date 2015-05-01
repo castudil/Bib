@@ -334,31 +334,53 @@
                  
                     <div class="team-member">
                         <%= image_tag @users.first.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
-                        
-                        <%= @users.first.biography %>
-                        <h4><%= @users.first.name %> <%= @users.first.last_name %> </h4>
-                        <p class="text-muted"><%=@users.first.career%></p>
-                        
                     </div>
-
-     
+                    <div class="tex-biography">    
+                        
+                        <h4><%= @users.first.name %> <%= @users.first.last_name %> </h4>
+                        <%= @users.first.biography %>
+                        <p class="text-muted"><%=@users.first.career%></p>
+                    </div>
+                    
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    
                     <div class="team-member">
                           <%= image_tag @users.second.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
-                        <h4><%= @users.second.name %> <%= @users.first.last_name %> </h4>
-                        <p class="text-muted"><%=@users.second.career%></p>
+                   
                      
                     </div>
+                     <div class="tex-biography">    
+                        
+                        <h4><%= @users.second.name %> <%= @users.second.last_name %> </h4>
+                        <%= @users.second.biography %>
+                        <p class="text-muted"><%=@users.second.career%></p>
+                    </div>
         
-         
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
                     <div class="team-member">
                        
                           <%= image_tag @users.third.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
-                        <h4><%= @users.third.name %> <%= @users.first.last_name %> </h4>
-                        <p class="text-muted"><%=@users.third.career%></p>
+        
                         
                     </div>
+
+                     <div class="tex-biography">    
+                        <h4><%= @users.third.name %> <%= @users.third.last_name %> </h4>
+                        <%= @users.third.biography %>
+                        <p class="text-muted"><%=@users.third.career%></p>
+                    </div>
             
-            
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
       
             <div class="col-sm-5"></div>
             <a href=<%= users_path%> class="btn btn-xl">Previous Students</a>

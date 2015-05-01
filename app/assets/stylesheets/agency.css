@@ -660,6 +660,7 @@ section h3.section-subheading {
 
 .team-member {
     margin-bottom: 50px;
+    float: left;
 
 }
 
@@ -676,6 +677,9 @@ section h3.section-subheading {
 
 .team-member p {
     margin-top: 0;
+}
+.tex-biography{
+   
 }
 
 aside.clients img {
