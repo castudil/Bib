@@ -18,18 +18,20 @@ ActiveAdmin.register User do
     f.inputs "Details" do
 
       f.input :approved
+      f.input :activo
     end
     f.actions
   end
 
 
-  permit_params :email, :password, :approved
+  permit_params :email, :password, :approved , :activo
  
 
   index do
     column :id
     column :email
     column :approved
+    column :activo 
     actions
   end
 

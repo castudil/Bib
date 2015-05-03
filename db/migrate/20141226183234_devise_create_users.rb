@@ -35,6 +35,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :biography
       t.string :graduation_year
       t.string :career
+      t.boolean :activo
       t.attachment :avatar
       t.integer :superUser
 
