@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     
 
     def index
-        @users = User.last(3) # last 3 records in ascending order
+        @users = User.where( activo: true) # last 3 records in ascending order
         
     end
 

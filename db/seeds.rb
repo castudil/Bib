@@ -8,7 +8,7 @@
 
 
 	userAdmin = User.create([{ name: 'Cesar' , approved: true , last_name: 'Astudillo', biography: 'bio' , graduation_year: 1970 , 
-		email: 'email1@email.com' , career: 'teacher', password: 'password', superUser: 1 , activo: true}])
+		email: 'email1@email.com' , career: 'teacher', password: 'password', superUser: 1 , activo: false}])
 
 	user0 = User.create([{ name: 'Mario' , approved: true , last_name: 'Sanhueza', biography: 'I was born in rancagua and then move to curico to study ' ,
 	   graduation_year: 1970 , 
@@ -19,3 +19,21 @@
 
 	user2 = User.create([{ name: 'Eduardo' , approved: true , last_name: 'Zapata', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
 		email: 'email4@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: true}])
+
+	user3 = User.create([{ name: 'Nicolas' , approved: true , last_name: 'Muñoz', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
+		email: 'email5@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: true}])
+
+	user4 = User.create([{ name: 'Claudio' , approved: true , last_name: 'Valenzuela', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
+		email: 'email6@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: true}])
+
+	user5 = User.create([{ name: 'Tamara' , approved: true , last_name: 'Valdivia', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
+		email: 'email7@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: true}])
+
+	user6 = User.create([{ name: 'Nicole' , approved: true , last_name: 'Gonzalez', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
+		email: 'email8@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: true}])
+
+	user7 = User.create([{ name: 'John' , approved: true , last_name: 'Zapata', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
+		email: 'email9@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: true}])
+
+	user8 = User.create([{ name: 'Cesar' , approved: true , last_name: 'Zapata', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
+		email: 'email10@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: true}])
