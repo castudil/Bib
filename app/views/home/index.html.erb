@@ -336,11 +336,15 @@
                     <div class="team-member">
                         <%= image_tag user.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
                     </div>
-                    <div class="tex-biography">    
+                    <h3 class="section-subheading text-muted">
+              
                         
-                        <h4><%= user.name %> <%=user.last_name %> </h4>
-                        <%= user.biography %>
+                        <%= user.name %> <%=user.last_name %> 
+                        <p></p>
                         <p class="text-muted"><%=user.career%></p>
+                        <p></p>
+                        <%= user.biography %>
+                        </h3>
                     </div>
                     
                     <br></br>
