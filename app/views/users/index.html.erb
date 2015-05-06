@@ -1,21 +1,23 @@
-<% @users.each do |user| %>                
-    <div class="col-sm-3"></div> 
-    <div class="team-member">
-        <%= image_tag user.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
-    </div>
-    <h3 class="section-subheading text-muted">
+<div class="container-users ">
+    <% @users.each do |user| %>                
+        <div class="col-sm-3"></div> 
+        <div class="team-member">
+            <%= image_tag user.avatar.url(:medium) , class: "img-responsive img-circle" , height: "100px", width: "130px" %>
+        </div>
+        <h3 class="section-subheading text-muted">
+
+            
+            <%= user.name %> <%=user.last_name %> 
+            <p></p>
+            <p class="text-muted"><%=user.career%></p>
+            <p></p>
+            <%= user.biography %>
+            </h3>
 
         
-        <%= user.name %> <%=user.last_name %> 
-        <p></p>
-        <p class="text-muted"><%=user.career%></p>
-        <p></p>
-        <%= user.biography %>
-        </h3>
-
-    
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
- <% end %>   
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+     <% end %>   
+ </div>
