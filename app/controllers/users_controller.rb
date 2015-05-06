@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 	layout "allbibs_layaout"
 
   def index
-		@users = User.all
+	@users = User.where(activo: false)
 		
   end
 
