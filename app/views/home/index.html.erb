@@ -402,16 +402,16 @@
             </div>
 
             
-        <center><%= form_tag contact_path do %>
-          <div><%= label_tag "email" %><br />
-          <%= text_field_tag 'email[email]', nil, :class => "input-field" %></div>
-          <div><%= label_tag "message" %><br />
-          <%= text_field_tag 'message[message]', nil, :class => "input-field" %></div>
-        <p></p>
-            <%= recaptcha_tags(:display => {:theme => 'red'}) %>
-        <div><%=  submit_tag 'Send' %></div>
-        <% end %>
-        </center>
+                <center><%= form_tag contact_path do %>
+                      <div><%= label_tag "email" %><br />
+                      <%= text_field_tag 'email[email]', nil, :class => "input-field" %></div>
+                      <div><%= label_tag "message" %><br />
+                      <%= text_field_tag 'message[message]', nil, :class => "input-field" %></div>
+                    <p></p>
+                        <%= recaptcha_tags(:display => {:theme => 'red'}) %>
+                    <div><%=  submit_tag 'Send' %></div>
+                    <% end %>
+                </center>
 
 
             <br></br>

@@ -6,7 +6,7 @@ class InvitationMailer < MandrillMailer::MessageMailer
 
     # no need to set up template and template_content attributes, set up the html and text directly
     mandrill_mail subject: "hello",
-                  to: "fenriz006@gmail.com",
+                  to: "cesar.astudillo@gmail.com",
                   text: "email : "+email +" message : "+message
                   
                   # to: invitation.email,
