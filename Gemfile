@@ -69,6 +69,8 @@ gem 'unicorn'
 
 gem 'mandrill_mailer'
 
+gem 'redcarpet'
+
 
 
 
