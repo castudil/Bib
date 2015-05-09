@@ -71,3 +71,5 @@
 	user19 = User.create([{ name: 'Miguel' , approved: true , last_name: 'Zapata', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
 	email: 'email10@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: false}])
 
+	AdminUser.create!(:email => 'cesar.astudillo@gmail.com', :password => 'password', :password_confirmation => 'password')
+
