@@ -13,6 +13,15 @@
  *= require_tree .
  *= require_self
  */
+.margin-student-two{
+
+  margin-left: 35%;
+}
+.margin-student{
+
+    margin-left: 39%;
+}
+
 
  .container-sing-in {
 
@@ -43,6 +52,8 @@ background:#717171;
 border-bottom:1px solid #313030;
 
 }
+
+
 
  .container-default{
 
