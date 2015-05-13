@@ -13,9 +13,10 @@
  *= require_tree .
  *= require_self
  */
-.margin-student-two{
+.margin-student-index{
 
-  margin-left: 35%;
+  
+  margin-top: 15%;
 }
 .margin-student{
 
