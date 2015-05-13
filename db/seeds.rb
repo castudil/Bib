@@ -8,7 +8,7 @@
 
 
 	userAdmin = User.create([{ name: 'Cesar' , approved: true , last_name: 'Astudillo', biography: 'bio' , graduation_year: 1970 , 
-		email: 'email1@email.com' , career: 'teacher', password: 'password', superUser: 1 , activo: false}])
+		email: 'cesar.astudillo@gmail.com' , career: 'teacher', password: 'perceptron', superUser: 1 , activo: false}])
 
 	user0 = User.create([{ name: 'Mario' , approved: true , last_name: 'Sanhueza', biography: 'I was born in rancagua and then move to curico to study ' ,
 	   graduation_year: 1970 , 
@@ -71,4 +71,4 @@
 	user19 = User.create([{ name: 'Miguel' , approved: true , last_name: 'Zapata', biography: 'I was born in San Fernando and then move to curico to study' , graduation_year: 1970 , 
 	email: 'email10@email.com' ,  career: 'Ing en Computacion', password: 'password', superUser: 2 , activo: false}])
 
-	AdminUser.create!(:email => 'cesar.astudillo@gmail.com', :password => 'password', :password_confirmation => 'password')
+	AdminUser.create!(:email => 'admin@cesar.com', :password => 'perceptron', :password_confirmation => 'perceptron')
