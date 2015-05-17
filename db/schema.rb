@@ -80,6 +80,7 @@ ActiveRecord::Schema.define(version: 20141227182231) do
     t.integer  "heir_id"
     t.string   "heir_type"
     t.integer  "bibtex_id"
+    t.string   "file"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

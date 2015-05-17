@@ -49,17 +49,25 @@
 				<%= link_to "Bibtex",  bibtex.path %>
 				<strong><a href=<%=xm_path(bibtex)%>  style="color: rgb(241, 196, 15)"> Xml </a></strong> 
 				<strong><a href=<%=json_path(bibtex)%> style="color: rgb(241, 196, 15)" > Json </a></strong> 
+				<% if !bibtex.file.blank? %>
+					<strong><a href=<%=bibtex.file %>  style="color: rgb(255, 14, 14)"> Pdf </a></strong> 
+				<% end %>
+
 				<% user = current_user %>
+
 				<% if user != nil && user.superUser == 1 %>
 					<%= link_to "Delete", allbib_path(bibtex), :confirm => "Are you sure?", :method => :delete %>
 				
-					<% if !bibtex.pdf.present? %>
+					<% if !bibtex.pdf.present? && bibtex.file.blank?%>
 						<a href=<%=new_pdf_path(:id => bibtex.id) %> > Add pdf </a>
 					<% end %>
+
 				<% end %>
 				<% if bibtex.pdf.present? %>
-					<%= link_to "Download" ,Pdf.last.pdfFile.url(:original , false) %>
+					<%= link_to "Download pdf" ,Pdf.last.pdfFile.url(:original , false) %>
 				<% end %>
+
+				
 			<p>
 		
 	<% end %>

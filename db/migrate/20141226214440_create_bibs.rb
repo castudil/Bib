@@ -9,6 +9,7 @@ class CreateBibs < ActiveRecord::Migration
       t.integer :heir_id
       t.string :heir_type
       t.integer :bibtex_id
+      t.string :file
 
       t.timestamps
     end
