@@ -53,11 +53,12 @@
 				<% if user != nil && user.superUser == 1 %>
 					<%= link_to "Delete", allbib_path(bibtex), :confirm => "Are you sure?", :method => :delete %>
 				
-					<% if bibtex.pdf.present? %>
-						<%= link_to "Download" ,Pdf.last.pdfFile.url(:original , false) %>
-					<% else %>
+					<% if !bibtex.pdf.present? %>
 						<a href=<%=new_pdf_path(:id => bibtex.id) %> > Add pdf </a>
 					<% end %>
+				<% end %>
+				<% if bibtex.pdf.present? %>
+					<%= link_to "Download" ,Pdf.last.pdfFile.url(:original , false) %>
 				<% end %>
 			<p>
 		
