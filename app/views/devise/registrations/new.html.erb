@@ -22,6 +22,8 @@
     <br>
     <%= f.input :password, required: true,:input_html => { :class => "mytext" }%>
     <%= f.input :password_confirmation, required: true,:input_html => { :class => "mytext" }%>
+    <%= f.input :activo, :as => :hidden ,required: true,:input_html => { :class => "mytext" , :value => true }%>
+    
     
   </div>
   <br>
