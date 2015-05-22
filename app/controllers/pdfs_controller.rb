@@ -1,4 +1,4 @@
-class PdfsController < ApplicationController
+ class PdfsController < ApplicationController
 
 	def new
 		@pdf = Pdf.new
@@ -12,6 +12,13 @@ class PdfsController < ApplicationController
 		pdf.save
 
 		redirect_to allbibs_path
+
+	end
+
+	def destroy
+		bibtex = Pdf.find(params[:id])
+		
+
 
 	end
 

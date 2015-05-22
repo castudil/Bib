@@ -53,21 +53,27 @@
 					<a href=<%= bibtex.file %> >
   							<img src="assets/pdf.ico" alt="Pdf File" height="20px" width="20px">
 					</a>
-				<% end %>
+				<% else  %>
+					
+					<% user = current_user %>
 
-				<% user = current_user %>
-
-				<% if user != nil && user.superUser == 1 %>
-					<%= link_to "Delete", allbib_path(bibtex), :confirm => "Are you sure?", :method => :delete %>
+					<% if user != nil && user.superUser == 1 %>
+						<%= link_to "Delete Bibtex", allbib_path(bibtex), :confirm => "Are you sure?", :method => :delete %> <!-- para borrar bibtex-->
 				
-					<% if !bibtex.pdf.present? && bibtex.file.blank?%>
-						<a href=<%=new_pdf_path(:id => bibtex.id) %> > Add pdf </a>
+						<% if !bibtex.pdf.present? && bibtex.file.blank?%>
+							<a href=<%=new_pdf_path(:id => bibtex.id) %> > Add pdf </a>
+						<% end %>
+
+					<% end %>
+					
+					<% if bibtex.pdf.present? %>
+						<%= link_to "Download pdf" ,Pdf.last.pdfFile.url(:original , false) %>
 					<% end %>
 
+
 				<% end %>
-				<% if bibtex.pdf.present? %>
-					<%= link_to "Download pdf" ,Pdf.last.pdfFile.url(:original , false) %>
-				<% end %>
+
+				
 
 				
 			<p>
