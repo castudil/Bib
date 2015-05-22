@@ -50,9 +50,9 @@
 				<strong><a href=<%=xm_path(bibtex)%>  style="color: rgb(241, 196, 15)"> Xml </a></strong> 
 				<strong><a href=<%=json_path(bibtex)%> style="color: rgb(241, 196, 15)" > Json </a></strong> 
 				<% if !bibtex.file.blank? %>
-			
-					<%= link_to image_tag("pdf.ico",alt: "pdf", height: "20px", width: "20px" ), bibtex.file %>
-                        
+					<a href=<%= bibtex.file %> >
+  							<img src="assets/pdf.ico" alt="Pdf File" height="20px" width="20px">
+					</a>
 				<% end %>
 
 				<% user = current_user %>
